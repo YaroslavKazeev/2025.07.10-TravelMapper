@@ -9,8 +9,12 @@
     <script type="module">
       import { GOOGLE_MAPS_API_KEY } from "/env.js";
       const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&loading=async&libraries=places&callback=initMap`;
+      // Remove the unsupported `loading=async` param and let the script load normally.
+      // We keep `libraries=places` so Places API is requested. The app will wait for
+      // `google.maps.places` to be available before initializing.
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&libraries=places`;
       script.async = true;
+      script.defer = true;
       document.head.appendChild(script);
     </script>
     <link rel="stylesheet" href="./public/style.css" />
