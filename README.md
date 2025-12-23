@@ -1,6 +1,8 @@
-# TraveMapper
+# TravelMapper
 
-This app has functionality similar to Google Maps, where the user can set a starting point and destination, and then the different routes will be displayed on the map embedded into the web page.
+TravelMapper is a web application that provides Google Maps-like functionality, allowing users to set starting points and destinations and view driving routes. It uses Google Places API for location suggestions and Maps Embed API for route display.
+
+This is a responsive app; it adjusts the layout to devices of different sizes. TravelMapper is a single-page application (SPA). It dynamically updates the HTML and CSS using JavaScript DOM manipulation. The app interacts with an API to grab data as the user requests it. Possible errors are shown to the user on the web page.
 
 This application is the project assignment and belongs to the API chapter of the HackYourFuture curriculum.
 
