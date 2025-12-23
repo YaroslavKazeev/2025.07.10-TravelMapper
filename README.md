@@ -17,22 +17,27 @@ It demonstrates how to access an API from the front-end and how you might handle
 
 ### Local Setup
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+It is a static front‑end app and should be served with a local live server (VS Code or another IDE) to avoid issues with API scripts.
 
 ```bash
-#1 Clone this repository (alternatively, just download and unpack the file archive)
+#1 Clone this repository (or download and unpack the archive)
 $ git clone https://github.com/YaroslavKazeev/TravelMapper.git
 
 #2 Go into the repository
 $ cd TravelMapper
-
-#3 Install Node.js if not installed globally
-$ npm install
 ```
 
-#4 Put the env.js file with the Google API key into the root directory of the app
+#3 Create the environment file
 
-#5 Open `index.html` in your web browser
+- Copy [example-env.js](example-env.js) to [env.js](env.js) in the project root.
+- Put your Google API key into [env.js](env.js) as described in the example file.
+
+#4 Run with a live server
+
+- VS Code: install the “Live Server” extension, open [index.html](index.html), and choose “Open with Live Server”.
+- Other IDEs: use a Live Server (or similar) plugin to serve the project folder, then open [index.html](index.html) via that server.
+
+#5 Open the served URL (e.g., http://localhost:5500) in your browser
 
 ## Running the App
 
